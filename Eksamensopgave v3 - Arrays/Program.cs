@@ -4,29 +4,23 @@ using System.Reflection.Metadata;
 
 namespace Eksamensopgave_v3___Arrays
 {
-    struct Medarbejdere()
-    {
-        public string navn;
-        public int nr;
-        public DateTime ankomst = new DateTime();        
-        public string afgang;
-    }
-    struct Kunde()
+    struct Registreringer()
     {
         public string navn;
         public int nr;
         public string formål;
         public string kontakt;
-        public DateTime ankomst = new DateTime();    
+        public DateTime ankomst = new DateTime();        
+        public string afgang;
     }
     internal class Program
     {
         static void Main(string[] args)
         {
             int Antal = 1000;
-            Medarbejdere[] medarbejdere = new Medarbejdere[Antal];
+            Registreringer[] medarbejdere = new Registreringer[Antal];
             int Kantal = 1000;
-            Kunde[] kunde = new Kunde[Kantal];
+            Registreringer[] kunde = new Registreringer[Kantal];
             int Kamount = 0;
             int amount = 0;
             int valg;
